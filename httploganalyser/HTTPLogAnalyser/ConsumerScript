@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp `mapr classpath`:./target/httploganalyser-1.0-jar-with-dependencies.jar edu.sjsu.cs185C.LogConsumerKafka /user/user01/Streams/HTTPLogAnalyser:analyzedData mycg2

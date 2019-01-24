@@ -1,0 +1,4 @@
+#!/bin/bash
+head -5000 access_log_Aug95_orig > aug95
+awk '{for(i=1; i<=NF; i++) if($i=="200") if(++count%10==0) $i="404"}1' aug95 > access_log_Aug95
+rm aug95

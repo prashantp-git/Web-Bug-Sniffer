@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/mapr/spark/spark-2.1.0/bin/spark-submit --class edu.sjsu.cs185C.LogAnalyserSpark ./target/httploganalyser-1.0-jar-with-dependencies.jar /user/user01/Streams/HTTPLogAnalyser:rawLogs /user/user01/Streams/HTTPLogAnalyser:analyzedData mycg1 300

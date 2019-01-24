@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp `mapr classpath`:./target/httploganalyser-1.0.jar edu.sjsu.cs185C.LogProducerKafka /user/user01/LABS/httploganalyser/HTTPLogDump/access_log_Aug95 /user/user01/Streams/HTTPLogAnalyser:rawLogs 2000

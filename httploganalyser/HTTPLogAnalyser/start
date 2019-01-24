@@ -1,0 +1,8 @@
+#!/bin/bash
+# My first script
+
+maprcli stream delete -path /user/user01/Streams/HTTPLogAnalyser
+maprcli stream create -path /user/user01/Streams/HTTPLogAnalyser
+maprcli stream topic create -path /user/user01/Streams/HTTPLogAnalyser -topic rawLogs
+maprcli stream topic create -path /user/user01/Streams/HTTPLogAnalyser -topic analyzedData
+

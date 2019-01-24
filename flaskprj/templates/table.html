@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<script>
+<!--
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(5000);
+
+//   -->
+</script>
+<table class="centered thick-border">
+	<tr>
+		<th>{{col1}}</th>
+		<th>{{col2}}</th>
+	</tr>
+	{% for k, v in value.items() %}
+		<tr>
+			<td>{{ k }}</td>
+			<td>{{ v }}</td>
+		</tr>		
+	{% endfor %}
+</table>
